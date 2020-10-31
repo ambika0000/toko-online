@@ -11,11 +11,11 @@ class PesananDetail extends Model
 
     public function pesanans()
     {
-        return $this->belongsTo(Pesanan::class, 'pesanan_id', 'id');
+        return $this->belongsTo(Pesanan::class, 'pesanan_id', 'id'); //tabel pesanan_detail terkait dengan pesanan
     }
     
     public function products()
    {
-        return $this->belongsTo(Product::class, 'product_id', 'id');
+        return $this->belongsTo(Product::class, 'product_id', 'id'); //tabel pesanan_detail terkait dengan product
     }
 }

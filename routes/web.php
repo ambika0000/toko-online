@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Livewire;
+use App\Http\Livewire\Home; // import dulu gaes
+use App\Http\Livewire\ProductIndex; // import dulu gaes
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +17,5 @@ use App\Http\Livewire;
 
 Auth::routes();
 
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/', [Livewire\Home::class, 'render'])->name('home');
+Route::get('/', [Home::class, 'render'])->name('home'); // untuk pemanggilan {{ route }}
+Route::get('/products', [ProductIndex::class, 'render'])->name('products'); // untuk pemanggilan {{ route }}

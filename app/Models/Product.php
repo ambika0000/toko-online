@@ -10,12 +10,12 @@ class Product extends Model
     use HasFactory;
 
     public function liga()
-
     {
-        return $this->belongsTo(Liga::class, 'liga_id', 'id');
+        return $this->belongsTo(Liga::class, 'liga_id', 'id'); //tabel product terkait dengan tabel liga
     }
+
     public function pesanan_details()
     {
-        return $this->hasMany(PesananDetail::class, 'product_id','id');
+        return $this->hasMany(PesananDetail::class, 'product_id','id'); //tabel product memiliki banyak pesanan_detail
     }
 }
