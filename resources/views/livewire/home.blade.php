@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app') <!-- harus di extends dulu gaes -->
 
 @section('content')
 <div class="container">
@@ -6,7 +6,8 @@
         <img src="{{ url('assets/slider/slider1.png') }}" alt="">
     </div>
 
-    <section class="pilih-liga mt-4">
+    {{-- LIGA --}}
+    <section class="pilih-liga mt-5">
         <h3><strong>Pilih Liga</strong></h3>
         <div class="row mt-4">
             @foreach($ligas as $liga)
@@ -21,7 +22,8 @@
         </div>
     </section>
 
-    <section class="best-products mt-4">
+    {{-- PRODUCT --}}
+    <section class="products mt-5">
         <h3><strong>Best Product</strong></h3>
         <div class="row mt-4">
             @foreach($products as $product)

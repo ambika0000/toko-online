@@ -42,6 +42,6 @@ class User extends Authenticatable
     ];
     public function pesanans()
     {
-        return $this->hasMany(Pesanan::class, 'user_id','id');
+        return $this->hasMany(Pesanan::class, 'user_id','id'); //tabel user memiliki banyak pesanan
     }
 }

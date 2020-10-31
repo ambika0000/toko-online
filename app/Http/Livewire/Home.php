@@ -2,8 +2,8 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Liga;
-use App\Models\Product;
+use App\Models\Liga; // import dulu gaes
+use App\Models\Product; // import dulu gaes
 use Livewire\Component;
 
 class Home extends Component
